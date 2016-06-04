@@ -1,0 +1,125 @@
+.m_leads
+  width 100%
+  text-align center
+  display table
+  width 100%
+  min-height 100%
+  height 100%
+  padding-top 140px
+  @media screen and (min-width: 461px)
+    padding-top 100px
+  @media screen and (min-width: 568px)
+    margin-bottom 0
+    padding-bottom 150px
+    &.normal
+      padding-bottom 0
+  .mainbg
+    position absolute
+    left 50%
+    top -200px
+    width 1920px
+    height 1060px
+    margin-left -(@width/2)
+    margin-top 0
+    background url("../images/bg.jpg") no-repeat top center
+    background-size cover
+  .lead-wrapper
+    display table-cell
+    vertical-align middle
+    position relative
+    overflow hidden
+  .wrapper
+    position static
+    height auto
+    max-width 970px
+    width auto
+  .intro
+    color $text
+    margin 25px 0
+    text-align center
+    .index-hello
+      box-shadow 0 0 10px rgba(0,0,0,.25)
+      border-radius 3px
+      position relative
+      background $white
+      color $text
+      padding 30px 25px
+      @media screen and (max-width: 568px)
+       padding-top 85px
+    //&.signin-form-wrapper
+    //  width 280px
+    //  // margin-left auto
+    //  // margin-right auto
+    h1
+      color $sky
+      font-size 30px
+      line-height 1
+      font-weight bold
+      margin-bottom 30px
+      @media screen and (max-width: 568px)
+        font-size 24px
+        margin-bottom 0
+      @media screen and (max-width: 480px)
+        font-size 20px
+        margin-bottom 0
+      br
+        display none
+        @media screen and (max-width: 568px)
+          display block
+      .hidden
+        display inline
+        @media screen and (max-width: 568px)
+          display none
+
+    .columns
+      text-align left
+      @media screen and (max-width: 568px)
+        text-align center
+      &.small
+        display none
+        @media screen and (max-width: 568px)
+          display block
+      &.large
+        display block
+        @media screen and (max-width: 568px)
+          display none
+      .col-1-of-2
+        padding-left 15px
+        padding-right 15px
+      h2
+        font-size 20px
+      p
+        margin-top 15px
+        margin-bottom 30px
+        &:last-child
+          margin-bottom 0
+        @media screen and (max-width: 568px)
+          margin-bottom 15px
+    .signin
+      margin-top 30px
+      @media screen and (max-width: 568px)
+        position absolute
+        left 0
+        top 0
+        width 100%
+        margin-top 25px
+      a
+        color $white
+        background $sky
+        display block
+        width 215px
+        height 35px
+        line-height 35px
+        text-align center
+        margin-left auto
+        margin-right auto
+        border-radius 3px
+        box-shadow 1px 1px 2px rgba(0,0,0,.25)
+        transition background .25s ease-in, box-shadow .25s ease-in
+        &:hover
+          background $sky - 5%
+        &:active
+          position relative
+          top 1px
+          box-shadow inset 1px 1px 3px rgba(0,0,0,.35), 0px 2px 1px -1px rgba(0,0,0,.15)
+          background $sky - 10%

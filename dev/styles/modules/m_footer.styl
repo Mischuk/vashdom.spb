@@ -1,0 +1,67 @@
+.m_footer
+  background #80858e
+  box-shadow 0 0 10px rgba(0,0,0,.25)
+  position relative
+  position absolute
+  left 0
+  bottom 0
+  margin-bottom 0
+  width 100%
+  height 150px
+  &.normal
+    position relative
+  @media screen and (max-width: 567px)
+    height 0
+    overflow hidden
+    background transparent
+
+  .logo
+    float left
+    width 134px
+    height 119px
+    margin 15.5px 0
+    background url("../images/footer-logo.png") no-repeat 0 0
+    background-size cover
+  .slogan
+    float left
+    line-height 150px
+    font-size 20px
+    color #fff
+    margin-left 55px
+    @media screen and (max-width: 970px)
+      display none
+  .contacts
+    float right
+    height 100%
+    .locate, .tel
+      display inline-block
+      vertical-align top
+      margin-left 10px
+      margin-right 10px
+      padding-top 50px
+      position relative
+      text-align center
+      color $white
+    .locate
+      font-size 16px
+      &:after
+        content ""
+        position absolute
+        left 50%
+        top 0
+        background: url('../images/sprite.png') no-repeat -5px -55px;
+        width: 31px;
+        height: 32px;
+        margin-left -(@width/2)
+    .tel
+      font-size 20px
+      font-weight bold
+      &:after
+        content ''
+        background: url('../images/sprite.png') no-repeat -41px -53px;
+        width: 32px;
+        height: 31px;
+        position absolute
+        left 50%
+        top 0
+        margin-left -(@width/2)

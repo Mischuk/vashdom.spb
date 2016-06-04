@@ -1,0 +1,88 @@
+.default-form
+  .form-title
+    background #e6e7e8
+    font-size 15px
+    line-height 1
+    padding 10px 0
+    margin-bottom 15px
+    border-radius 3px 3px 0 0
+  .row
+    position relative
+    padding 0 20px
+    margin-bottom 20px
+    &:last-child
+      margin-bottom 20px
+    .error-list
+      color $red
+      font-size 13px
+      line-height 1
+      width 100%
+      position absolute
+      left 0
+      bottom -16px
+      padding-left 20px
+      text-align right
+      padding-right 20px
+  .default-input-label
+    display inline-block
+    vertical-align middle
+    height 30px
+    line-height 30px
+    color #494949
+    font-size 15px
+    width 55px
+    text-align left
+    &.error
+      color $red
+  .default-input
+    display inline-block
+    vertical-align middle
+    height 30px
+    line-height 30px
+    width 180px
+    border 1px solid #e6e7e8
+    padding 0 10px
+    &.error
+      border-color $red
+    &:focus
+      border-color #494949
+  .options
+    height 30px
+    line-height 30px
+    font-size 13px
+    a
+      color $sky
+    .remember
+      float left
+      label
+        display inline-block
+        vertical-align middle
+        height 30px
+        line-height 30px
+        span
+          display inline-block
+          vertical-align middle
+          line-height 30px
+          vertical-align top
+    .forgot
+      float right
+      a
+        &:hover
+          text-decoration underline
+  .signup-link
+    font-size 13px
+    a
+      font-weight bold
+      color $black
+      &:hover
+        text-decoration underline
+        color $sky
+.signin-form
+  width 280px
+  background $white
+  box-shadow 0 0 10px rgba(0,0,0,.25)
+  border-radius 3px
+  display inline-block
+  vertical-align middle
+  position relative
+  z-index 10

@@ -1,0 +1,55 @@
+/*!=========================
+      Base grid styles
+==========================*/
+$footer = 150px
+$wrapper = 970px
+
+html, body
+  height 100%
+
+body
+  font-size 16px
+  line-height 1.2
+  font-family 'PT Sans', sans-serif
+  color $black
+  background $bg-color
+.container
+  position relative
+  min-height 100%
+  margin-bottom -($footer)
+  padding-bottom $footer
+.main
+  padding-bottom $footer
+.m_footer
+  width 100%
+  height $footer
+
+.wrapper
+  clearfix()
+  position relative
+  width $wrapper
+  height 100%
+  padding-left 15px
+  padding-right 15px
+  margin-left auto
+  margin-right auto
+  @media screen and (max-width: 970px)
+    width 96%
+
+.row,
+.columns
+  clearfix()
+.vertical-outer
+  display table
+  height 100%
+  width 100%
+.vertical-inner
+  display table-cell
+  vertical-align middle
+  width 100%
+.col-1-of-2
+  float left
+  width 50%
+.col-1-of-3
+  float left
+  width 33.333%
