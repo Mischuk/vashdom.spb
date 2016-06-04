@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="msapplication-tap-highlight" content="no"/>
     <title>Главная</title>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
@@ -12,76 +12,77 @@
     <link href="../styles/app.css" rel="stylesheet" media="all">
 </head>
 <body>
-    <!-- //= modules/m_header-fixed.html -->
-    <div  class="m_lead">
-        <div class="wrapper">
-            <div class="vertical-outer">
-                <div class="vertical-inner">
-                    <div class="intro" data-vd="index">
-                        <div class="index-hello" data-vd="hello">
-                            <h1>«Ваш Дом» <br><span class="hidden">-</span> Агентство недвижимости</h1>
-                            <!-- .large отображается для планшетов, в .small можно сделать отдельный компантный контент для мобильных-->
-                            <div class="columns large">
-                                <div class="col-1-of-2">
-                                    <h2>«Ваш Дом» - Агентство недвижимости</h2>
-                                    <p>Компания «Ваш Дом» работает с 1996 года и зарекомендовала себя как надежное агентство недвижимости, специалистам которого можно доверять. Мы прошли через 3 кризиса и до сих пор занимаем лидирующие позиции на рынке.</p>
-                                    <p>Благодаря партнерским отношениям со строительными компаниями, мы поможем вам выгодно купить квартиру еще до старта официальных продаж. Также, мы можем подобрать объекты для инвестирования еще на стадии закладки котлована.</p>
-                                </div>
-                                <div class="col-1-of-2">
-                                    <h2>«Ваш Дом» - Агентство недвижимости</h2>
-                                    <p>Компания «Ваш Дом» работает с 1996 года и зарекомендовала себя как надежное агентство недвижимости, специалистам которого можно доверять. Мы прошли через 3 кризиса и до сих пор занимаем лидирующие позиции на рынке.</p>
-                                    <p>Благодаря партнерским отношениям со строительными компаниями, мы поможем вам выгодно купить квартиру еще до старта официальных продаж. Также, мы можем подобрать объекты для инвестирования еще на стадии закладки котлована.</p>
-                                </div>
-                            </div>
-                            <div class="columns small">
+    //= modules/m_header-fixed.html
+
+    <div class="m_leads">
+        <div class="lead-wrapper">
+            <div class="wrapper">
+                <div class="intro" data-vd="index">
+                    <div class="mainbg"></div>
+                    <div class="index-hello" data-vd="hello">
+                        <h1>«Ваш Дом» <br><span class="hidden">-</span> Агентство недвижимости</h1>
+                        <!-- .large отображается для планшетов, в .small можно сделать отдельный компантный контент для мобильных-->
+                        <div class="columns large">
+                            <div class="col-1-of-2">
+                                <h2>«Ваш Дом» - Агентство недвижимости</h2>
                                 <p>Компания «Ваш Дом» работает с 1996 года и зарекомендовала себя как надежное агентство недвижимости, специалистам которого можно доверять. Мы прошли через 3 кризиса и до сих пор занимаем лидирующие позиции на рынке.</p>
                                 <p>Благодаря партнерским отношениям со строительными компаниями, мы поможем вам выгодно купить квартиру еще до старта официальных продаж. Также, мы можем подобрать объекты для инвестирования еще на стадии закладки котлована.</p>
                             </div>
-
-                            <div class="signin">
-                                <a class="button-sky" href="#" data-vd="signin">Вход</a>
+                            <div class="col-1-of-2">
+                                <h2>«Ваш Дом» - Агентство недвижимости</h2>
+                                <p>Компания «Ваш Дом» работает с 1996 года и зарекомендовала себя как надежное агентство недвижимости, специалистам которого можно доверять. Мы прошли через 3 кризиса и до сих пор занимаем лидирующие позиции на рынке.</p>
+                                <p>Благодаря партнерским отношениям со строительными компаниями, мы поможем вам выгодно купить квартиру еще до старта официальных продаж. Также, мы можем подобрать объекты для инвестирования еще на стадии закладки котлована.</p>
                             </div>
                         </div>
-                        <div class="signin-form default-form" data-vd="signin-form" style="display: none">
-                            <form id="form-signin" name="form-signin" method="POST">
-                                <div class="form-title">
-                                    <span>Вход</span>
-                                </div>
-                                <div class="row">
-                                    <label class="default-input-label" for="form-signin-username">Логин</label>
-                                    <input class="default-input" id="form-signin-username" name="form-signin-username" type="text" data-validation="[NOTEMPTY]" data-validation-message="Проверьте правильность ввода «Логин»">
-                                </div>
-                                <div class="row">
-                                    <label class="default-input-label" for="form-signin-password">Пароль</label>
-                                    <input class="default-input generated-password" id="form-signin-password" name="form-signin-password" type="password" placeholder="" data-validation="[NOTEMPTY]" data-validation-message="Проверьте правильность ввода «Пароль»">
-                                </div>
-                                <div class="row options">
-                                    <div class="remember">
-                                        <input id="form-signin-remember" type="checkbox" name="form-signin-remember"/>
-                                        <label for="form-signin-remember">
-                                            <span class="icon"></span>
-                                            <span class="text">Запомнить меня</span>
-                                        </label>
-                                    </div>
-                                    <div class="forgot">
-                                        <a href="#">Забыли пароль?</a>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="signup-link"><a href="#">Зарегистрироваться</a>, если Вы новый пользователь</div>
-                                </div>
-
-                                <div class="row">
-                                    <input class="button-sky submit" type="submit" value="Продолжить">
-                                </div>
-                            </form>
+                        <div class="columns small">
+                            <p>Компания «Ваш Дом» работает с 1996 года и зарекомендовала себя как надежное агентство недвижимости, специалистам которого можно доверять. Мы прошли через 3 кризиса и до сих пор занимаем лидирующие позиции на рынке.</p>
+                            <p>Благодаря партнерским отношениям со строительными компаниями, мы поможем вам выгодно купить квартиру еще до старта официальных продаж. Также, мы можем подобрать объекты для инвестирования еще на стадии закладки котлована.</p>
                         </div>
+
+                        <div class="signin">
+                            <a class="button-sky" href="#" data-vd="signin">Вход</a>
+                        </div>
+                    </div>
+                    <div class="signin-form default-form" data-vd="signin-form" style="display: none">
+                        <form id="form-signin" name="form-signin" method="POST">
+                            <div class="form-title">
+                                <span>Вход</span>
+                            </div>
+                            <div class="row">
+                                <label class="default-input-label" for="form-signin-username">Логин</label>
+                                <input class="default-input" id="form-signin-username" name="form-signin-username" type="text" data-validation="[NOTEMPTY]" data-validation-message="Проверьте правильность ввода «Логин»">
+                            </div>
+                            <div class="row">
+                                <label class="default-input-label" for="form-signin-password">Пароль</label>
+                                <input class="default-input generated-password" id="form-signin-password" name="form-signin-password" type="password" placeholder="" data-validation="[NOTEMPTY]" data-validation-message="Проверьте правильность ввода «Пароль»">
+                            </div>
+                            <div class="row options">
+                                <div class="remember">
+                                    <input id="form-signin-remember" type="checkbox" name="form-signin-remember"/>
+                                    <label for="form-signin-remember">
+                                        <span class="icon"></span>
+                                        <span class="text">Запомнить меня</span>
+                                    </label>
+                                </div>
+                                <div class="forgot">
+                                    <a href="#">Забыли пароль?</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="signup-link"><a href="#">Зарегистрироваться</a>, если Вы новый пользователь</div>
+                            </div>
+
+                            <div class="row">
+                                <input class="button-sky submit" type="submit" value="Продолжить">
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- //= modules/m_footer-fixed.html -->
+
+    //= modules/m_footer.html
     <!-- Javascript -->
     <script src="../scripts/plugins.js"></script>
     <script src="../scripts/app.js"></script>

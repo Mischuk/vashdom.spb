@@ -1,13 +1,15 @@
 .m_header
-  position absolute
-  top 0
-  left 0
-  width 100%
+  position relative
   z-index 1
   border-bottom 1px solid $sky
   box-shadow 0 0 10px rgba(0,0,0,.15)
   height 100px
   background #fff
+  &.fixed
+    position absolute
+    left 0
+    top 0
+    width 100%
   @media screen and (max-width: 460px)
     height 140px
   .logo
