@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-tap-highlight" content="no"/>
+    <title>Пользователи</title>
+    <!-- <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'> -->
+    <!-- Styles -->
+    <link href="../styles/vendor.css" rel="stylesheet" media="all">
+    <link href="../styles/app.css" rel="stylesheet" media="all">
+</head>
+<body>
+    //= modules/modals.html
+    <div class="container">
+        <div class="main">
+            //= modules/m_header.html
+            //= modules/m_admin-new-user.html
+            <div class="m_admin">
+                <div class="header">
+                    <div class="menu">
+                        <div class="menu-dropdown current users" data-vd="dropdown-select">
+                            <a href="#" class="label">
+                                <span>Пользователи</span>
+                            </a>
+                            <div class="dropdown-select">
+                                <ul>
+                                    <li><a class="popup-with-zoom-anim" href="#admin-new-user">Добавить нового пользователя</a></li>
+                                    <li><a href="#">Добавить новую группу</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="menu-dropdown objects" data-vd="dropdown-select">
+                            <a href="#" class="label">
+                                <span>Объекты</span>
+                            </a>
+                        </div>
+                        <div class="menu-dropdown statistics" data-vd="dropdown-select">
+                            <a href="#" class="label">
+                                <span>Статистика</span>
+                            </a>
+                        </div>
+                        <div class="menu-dropdown reserved" data-vd="dropdown-select">
+                            <a href="#" class="label">
+                                <span>Регламент бронирования</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="search">
+                            <form class="default-form">
+                                <input class="default-input" type="text" placeholder="Поиск">
+                                <button class="submit" type="submit"></button>
+                            </form>
+                        </div>
+                        <div class="options">
+                            <div class="download">
+                                <div class="checkbox">
+                                    <input id="download-excel" type="checkbox" name="download-excel" checked="checked"/>
+                                    <label for="download-excel">
+                                        <span class="icon"></span>
+                                    </label>
+                                </div>
+                                <a class="button-sky small" href="#">
+                                    <span>Выгрузить в Excel</span>
+                                </a>
+                            </div>
+                            <div class="remove">
+                                <div class="checkbox">
+                                    <input id="remove-selected" type="checkbox" name="remove-selected" checked="checked"/>
+                                    <label for="remove-selected">
+                                        <span class="icon"></span>
+                                    </label>
+                                </div>
+                                <a class="button-sky small" href="#">
+                                    <span>Удалить выбранное</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        //= modules/m_footer.html
+    </div>
+
+    <!-- Javascript -->
+    <script src="../scripts/plugins.js"></script>
+    <script src="../scripts/app.js"></script>
+    <script src="../scripts/admin.js"></script>
+</body>
+</html>

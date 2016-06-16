@@ -1,0 +1,152 @@
+.m_admin
+  padding-top 50px
+  padding-bottom 50px
+  .header
+    margin-bottom 25px
+  .menu
+    cursor default
+    margin-bottom 25px
+    .menu-dropdown
+      position relative
+      display inline-block
+      vertical-align middle
+      margin-right 20px
+      &.current
+        .label
+          color $sky
+          &:before
+            triangle(down, 4px, $sky)
+      &.users
+        .label:after
+          background: url('../images/sprite.png') no-repeat 0 -100px;
+          width: 21px;
+          height: 21px;
+          margin-top -(@height/2)
+        &.current .label:after
+          background-position 0 -134px
+      &.objects
+        .label:after
+          background: url('../images/sprite.png') no-repeat -34px -100px;
+          width: 20px;
+          height: 24px;
+          margin-top -(@height/2)
+        &.current .label:after
+          background-position -34px -137px
+      &.statistics
+        .label:after
+          background: url('../images/sprite.png') no-repeat -67px -100px;
+          width: 17px;
+          height: 20px;
+          margin-top -(@height/2)
+        &.current .label:after
+          background-position -67px -138px
+      &.reserved
+        .label:after
+          background: url('../images/sprite.png') no-repeat -97px -99px;
+          width: 16px;
+          height: 21px;
+          margin-top -(@height/2)
+        &.current .label:after
+          background-position -97px -137px
+      .label
+        position relative
+        display block
+        padding-right 25px
+        color $black
+        padding-left 25px
+        &:before
+          content ''
+          position absolute
+          right 12px
+          top 50%
+          margin-top -2px
+          triangle(down, 4px, #494949)
+        &:after
+          content ""
+          position absolute
+          left 0
+          top 50%
+        span
+          font-weight bold
+          font-size 15px
+          line-height 25px
+        &:hover
+          span
+            text-decoration underline
+      .dropdown-select
+        position absolute
+        width 220px
+        height auto
+        left 0
+        top 100%
+        background #fff
+        z-index 20
+        border 1px solid #e6e7e8
+        border-radius 3px
+        box-shadow 2px 2px 4px -2px rgba(0,0,0,.15)
+        display none
+        transform translateY(-10px) scale(0.9)
+        transition transform .25s ease-in
+        &.open
+          transform translateY(0) scale(1)
+          transition transform .25s ease-out
+        li
+          display block
+          border-bottom 1px solid #e6e7e8
+          &:last-child
+            border none
+        a
+          display block
+          font-size 13px
+          line-height 1
+          padding 10px 10px
+          color $text
+          &:hover
+            color $sky
+            text-decoration underline
+
+  .search,
+  .options
+    float left
+    width 50%
+  .search
+    form
+      position relative
+      box-shadow 0 1px 2px -1px rgba(0,0,0,.1)
+      width 90%
+      input
+        width 100%
+        padding-right 35px
+        height 25px
+        border-radius 3px
+        font-size 13px
+        &:focus
+          & + .submit
+            border-color #494949
+      .submit
+        width 25px
+        height 25px
+        position absolute
+        right 0
+        top 0
+        border none
+        background #fff
+        border-left 1px solid #e6e7e8
+        background url("../images/search.png") no-repeat 50%
+  .options
+    text-align right
+    height 25px
+    .download,
+    .remove
+      position relative
+      display inline-block
+      vertical-align middle
+      .checkbox
+        position absolute
+        left 0
+        top 50%
+        z-index 1
+        margin-top -6.5px
+
+
+

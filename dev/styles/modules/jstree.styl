@@ -1,0 +1,76 @@
+#jstree
+  ul ul .jstree-icon:empty:after
+    display none !important
+  .jstree-icon.jstree-ocl
+    position relative
+    background none
+    &:after
+      content ''
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 5px 0 5px 5px;
+      border-color: transparent transparent transparent #808285;
+      position absolute
+      left 50%
+      top 50%
+      margin-top -5px
+      margin-left -2.5px
+  .jstree-open
+    .jstree-icon.jstree-ocl:after
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 5px 5px 0 5px;
+      border-color: #808285 transparent transparent transparent;
+      margin-top -2.5px
+      margin-left -5px
+  .jstree-icon.jstree-themeicon
+    background: url('../images/sprite.png') no-repeat -52px 6px;
+  .jstree-leaf
+    .jstree-icon.jstree-ocl
+      &:after
+        display none !important
+  .jstree-anchor
+    font-size 14px
+    color #6d6e71
+    &.jstree-disabled
+      color #cacccd
+      .jstree-themeicon
+        opacity .5
+  .jstree-checkbox
+    width 10px
+    height 10px
+    background #d2d3d5
+    border 1px solid #c4c4c6
+    margin-top 6px
+    &.jstree-undetermined
+      box-shadow inset 0 0 0 5px $sky
+
+  .jstree-anchor.jstree-clicked
+    .jstree-checkbox
+      position relative
+      &:after
+        content ''
+        background url("../images/checkbox.png") no-repeat 0 0
+        width 8px
+        height 6px
+        position absolute
+        background-size cover
+        left 50%
+        top 50%
+        margin-left -(@width/2)
+        margin-top -(@height/2)
+.jstree-clicked i.jstree-icon.jstree-checkbox
+  background red
+  &:before
+    content ''
+    background url("../images/checkbox.png") no-repeat 0 0
+    width 8px
+    height 6px
+    position absolute
+    background-size cover
+    left 50%
+    top 50%
+    margin-left -(@width/2)
+    margin-top -(@height/2)

@@ -62,3 +62,58 @@
         &:hover
           color $sky
           text-decoration underline
+  .logged
+    float right
+    width auto
+    height 100%
+    .reserved,
+    .logged-username
+      display inline-block
+      vertical-align middle
+    .logged-username
+      font-size 14px
+      line-height 1
+      padding-right 20px
+      padding-left 20px
+      a
+        color $black
+        text-decoration underline
+        &:hover
+          color $sky
+          text-decoration underline
+    .reserved
+      a
+        anim()
+        display block
+        height 35px
+        line-height 33px
+        border 1px solid rgba(0, 171, 227, .25)
+        border-radius 3px
+        span
+          position relative
+          color $sky
+          font-size 14px
+          padding-left 35px
+          padding-right 20px
+          &:before
+            content ""
+            background: url("../images/sprite.png") no-repeat -97px -137px;
+            width 16px
+            height 21px
+            position absolute
+            left 10px
+            top 50%
+            margin-top -11px
+          &:after
+            content ''
+            position absolute
+            right 8px
+            top 50%
+            margin-top -2px
+            triangle(down, 4px, $sky)
+        &:hover
+          border-color $sky
+.select2-results__options
+  width 100%
+  position relative
+  overflow auto

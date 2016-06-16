@@ -1,0 +1,185 @@
+.m_filters-main
+  position relative
+  background #f4f4f4
+  border-radius 5px
+  border 1px solid $border
+  padding 0
+  text-align center
+  padding-bottom 5px
+  .columns-1,
+  .columns-6,
+  .columns-3
+    clearfix()
+    display block
+    width 765px
+    margin-left auto
+    margin-right auto
+    .col
+      position relative
+      float left
+    .small-row
+      clearfix()
+      margin-bottom 10px
+      .small-col
+        width 50%
+        float left
+        .SumoSelect
+          width 100%
+        .checkbox
+          width 100%
+          font-size 13px
+          line-height 30px
+          height 30px
+          text-align center
+          label
+            position relative
+            display block
+            height 30px
+            line-height 30px
+            padding-left 10px
+          .text
+            margin-left 20px
+            color #939598
+          .icon
+            top 50%
+            margin-top -6.5px
+            left 10px
+      .values-inp
+        float left
+        &.large
+          width 135px
+        &.small
+          width 110px
+        label.ruble,
+        label.sq
+          position relative
+          input
+            text-align left !important
+            font-size 12px
+            padding-left 5px
+            padding-right 10px
+          &:after
+            font-size 9px
+            line-height 30px
+            position absolute
+            right 0
+            top 0
+            width 15px
+            text-align center
+            color #939598
+        label.ruble:after
+          content 'Р'
+        label.sq
+          input
+            padding-right 18px
+          &:before
+            content '2'
+            position absolute
+            right 0
+            top 0
+            width 10px
+            line-height 20px
+            text-align center
+            color #939598
+            font-size 7px
+          &:after
+            content 'м'
+            font-size 11px
+            text-align left
+
+
+  .filter-button
+    a
+      position relative
+      display block
+      line-height 30px
+      height 30px
+      font-size 13px
+      color #ccc
+      background #fff
+      border 1px solid #e6e7e8
+      border-radius 3px
+      padding-left 5px
+      &:after
+        content ''
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 4px 4px 0 4px;
+        border-color: #939598 transparent transparent transparent;
+        position absolute
+        right 10px
+        top 50%
+        margin-top -1px
+  .columns-1
+    padding-top 15px
+    margin-bottom 10px
+    padding-left 5px
+    padding-right 5px
+    .col
+      width 100%
+      .SumoSelect
+        width 100% !important
+  .columns-6
+    .col
+      width 127.5px
+      padding-right 5px
+      padding-left 5px
+      .SumoSelect
+        width 100%
+        .optWrapper
+          width 245px
+      &.right-select-wrap
+        .optWrapper
+          left auto
+          right 0
+  .columns-3
+    margin-top 10px
+    .col
+      width 255px
+      padding-left 5px
+      padding-right 5px
+      &:first-child + .col
+        .title-inp.large
+          padding-right 5px
+
+  form
+    clearfix()
+    text-align left
+    .button-sky
+      width 100%
+      height 30px
+      line-height 30px
+      box-shadow none
+      margin-top -6px
+    input[type="checkbox"]
+      display none
+    input
+      display inline-block
+      vertical-align middle
+      height 30px
+      line-height 30px
+      border 1px solid $border
+      padding 0 10px
+      width 100%
+      border-radius 3px
+      font-size 13px
+      &:focus
+        border-color $border-focus
+    .values-inp
+      .title-inp
+        font-size 12px
+        line-height 30px
+        color #989a9a
+        width 31px
+        float left
+        padding-left 15px
+        &.large
+          width 62px
+          padding-left 0
+          text-align right
+        &.left
+          text-align left
+      label
+        float right
+        width 73px

@@ -1,0 +1,62 @@
+.m_filters-results
+  margin-top 25px
+  .filters-results-title
+    padding-top 10px
+    padding-bottom 10px
+    font-size 20px
+    line-height 1
+    border-bottom 1px solid $border
+  .checkerboard-lead-info
+    padding-top 10px
+    padding-bottom 20px
+    .item-name
+      font-size 18px
+      margin-bottom 10px
+    .item-desc
+      margin-bottom 10px
+      font-size 15px
+      color #6d6e71
+    .checkerboard-info
+      > div
+        width 70px
+        height 18px
+        line-height 18px
+        font-size 13px
+        display inline-block
+        vertical-align middle
+        color #fff
+        text-align center
+        cursor default
+        &.sell
+          background $green
+        &.sold
+          background $red
+        &.reserved
+          background $yellow
+        &.inactive
+          background $blue
+  .filters-results-checkerboard
+    clearfix()
+    .item
+      width 5.88%
+      height 50px
+      float left
+      font-size 10px
+      text-align center
+      color #fff
+      padding 1px
+      a
+        display block
+        color #fff
+      &.sell
+        a
+          background $green
+      &.sold
+        a
+          background $red
+      &.reserved
+        a
+          background $yellow
+      &.inactive
+        a
+          background $blue

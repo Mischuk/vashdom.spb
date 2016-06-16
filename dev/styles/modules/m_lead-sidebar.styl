@@ -1,0 +1,91 @@
+.m_lead-sidebar
+  .navs,
+  .callback,
+  .checkerboard
+    border 1px solid $border
+    border-radius 3px
+  .navs
+    padding 15px 10px
+    a
+      display block
+      text-align center
+      height 30px
+      line-height 28px
+      width 100%
+      color $text
+      border 1px solid $border
+      border-radius 3px
+      margin-bottom 10px
+      font-size 14px
+      &:last-child
+        margin-bottom 0
+      &:hover
+        border-color $sky
+        color $sky
+  .callback
+    font-size 12px
+    color $text
+    text-align center
+    padding 10px
+    margin-top 25px
+    p
+      margin 0
+    a
+      margin-top 5px
+      padding-left 0
+      padding-right 0
+  .checkerboard
+    padding 10px 0
+    margin-top 25px
+    .heading
+      margin-bottom 10px
+      padding-left 10px
+      a
+        color #000
+        font-size 13px
+        text-decoration underline
+        &:hover
+          text-decoration none
+    .group
+      border-bottom 1px solid #a7a9ac
+      padding 5px
+      &:last-child
+        border-bottom none
+      .title
+        color #000
+        font-size 13px
+        margin-bottom 5px
+        padding-left 5px
+      .list
+        clearfix()
+        .item
+          float left
+          width 25%
+          a
+            anim()
+            display block
+            padding 5px 2px
+            border 1px solid #fff
+            border-radius 5px
+            &:hover
+              border-color $sky
+              .name
+                color $sky
+                text-decoration underline
+          .status
+            display block
+            margin-left auto
+            margin-right auto
+            width 13px
+            height 13px
+            &.active
+              background $green
+            &.busy
+              background $red
+          .name
+            anim()
+            display block
+            font-size 9px
+            color #6d6e71
+            text-align center
+            margin-top 5px

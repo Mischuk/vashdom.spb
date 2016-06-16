@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="msapplication-tap-highlight" content="no"/>
     <title>Главная</title>
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <!-- <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'> -->
     <!-- Styles -->
     <link href="../styles/vendor.css" rel="stylesheet" media="all">
     <link href="../styles/app.css" rel="stylesheet" media="all">
 </head>
 <body>
+    //= modules/modals.html
     //= modules/m_header-fixed.html
-
     <div class="m_leads">
         <div class="lead-wrapper">
             <div class="wrapper">
@@ -47,21 +47,21 @@
                             <a class="button-sky" href="#" data-vd="signin">Вход</a>
                         </div>
                     </div>
-                    <!-- Screen #1: Hello -->
+                    <!-- end Screen #1: Hello -->
 
                     <!-- Screen #2: Signin -->
                     <div class="signin-form default-form" data-vd="signin-form" style="display: none">
-                        <form id="form-signin" name="form-signin" method="POST">
+                        <form data-vd="form-validate" name="form-signin" method="POST">
                             <div class="form-title">
                                 <span>Вход</span>
                             </div>
                             <div class="row">
                                 <label class="default-input-label" for="form-signin-username">Логин</label>
-                                <input class="default-input" id="form-signin-username" name="form-signin-username" type="text" data-validation="[NOTEMPTY]" data-validation-message="Проверьте правильность ввода «Логин»">
+                                <input class="default-input" id="form-signin-username" name="form-signin-username" autocomplete="off" type="text" data-validation="[NOTEMPTY]" data-validation-message=" ">
                             </div>
                             <div class="row">
                                 <label class="default-input-label" for="form-signin-password">Пароль</label>
-                                <input class="default-input generated-password" id="form-signin-password" name="form-signin-password" type="password" placeholder="" data-validation="[NOTEMPTY]" data-validation-message="Проверьте правильность ввода «Пароль»">
+                                <input class="default-input" id="form-signin-password" name="form-signin-password" type="password" placeholder="" data-vd="generated-password" data-validation="[NOTEMPTY]" data-validation-message=" ">
                             </div>
                             <div class="row options">
                                 <div class="remember">
@@ -72,11 +72,11 @@
                                     </label>
                                 </div>
                                 <div class="forgot">
-                                    <a href="#">Забыли пароль?</a>
+                                    <a href="#" data-vd="forgot">Забыли пароль?</a>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="signup-link"><a href="#">Зарегистрироваться</a>, если Вы новый пользователь</div>
+                                <div class="signup-link"><a href="#" data-vd="signup">Зарегистрироваться</a>, если Вы новый пользователь</div>
                             </div>
 
                             <div class="row">
@@ -85,11 +85,83 @@
                         </form>
                     </div>
                     <!-- end Screen #2: Signin -->
+
+                    <!-- Screen #3: Forgot -->
+                    <div class="forgot-form default-form" data-vd="forgot-form" style="display: none">
+                        <form data-vd="form-validate" name="form-forgot" method="POST">
+                            <div class="form-title">
+                                <span>Воссстановление пароля</span>
+                            </div>
+                            <div class="row">
+                                <p class="form-text">Для восстановления пароля введите адрес электронной почты, указанный при регистрации</p>
+                            </div>
+                            <div class="row">
+                                <input class="default-input" id="form-forgot-email" name="form-forgot-email" type="email" data-validation="[EMAIL]" data-validation-message=" " placeholder="" autocomplete="off">
+                            </div>
+
+                            <div class="row">
+                                <input class="button-sky submit" type="submit" value="Продолжить">
+                            </div>
+                        </form>
+                    </div>
+                    <!-- end Screen #3: Forgot -->
+
+                    <!-- Screen #4: Success -->
+                    <div class="success-form default-form" data-vd="success-form" style="display: none">
+                        <form data-vd="form-validate" name="form-success" method="POST">
+                            <div class="form-title">
+                                <span data-vd="success-form-title"></span>
+                            </div>
+                            <div class="row compact">
+                                <div class="success-title">Заявка успешно отправлена!</div>
+                                <div class="success-manager">Наш менеджер свяжется с Вами<br>для подтверждения данных</div>
+                                <div class="success-if-error">Если мы не связались с Вами в течении 24 ч, то Вы можете связаться с тех.поддержкой по телефону:</div>
+                                <div class="success-tel"><a href="tel:88123097999">8 (812) 309-79-99</a></div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- end Screen #4: Success -->
+
+                    <!-- Screen #5: Signup -->
+                    <div class="signup-form default-form" data-vd="signup-form" style="display: none">
+                        <form data-vd="form-validate" name="form-signup" method="POST">
+                            <div class="form-title">
+                                <span>Заявка на регистрацию</span>
+                            </div>
+                            <div class="row">
+                                <label class="default-input-label" for="form-signup-username">Имя</label>
+                                <input class="default-input" id="form-signup-username" name="form-signup-username" autocomplete="off" type="text" data-validation="[NOTEMPTY]" data-validation-message=" ">
+                            </div>
+                            <div class="row">
+                                <label class="default-input-label" for="form-signup-surname">Фамилия</label>
+                                <input class="default-input" id="form-signup-surname" name="form-signup-surname" autocomplete="off" type="text" data-validation="[NOTEMPTY]" data-validation-message=" ">
+                            </div>
+                            <div class="row">
+                                <label class="default-input-label" for="form-signup-email">Email</label>
+                                <input class="default-input" id="form-signup-email" name="form-signup-email" type="email" data-validation="[EMAIL]" data-validation-message=" " placeholder="" autocomplete="off">
+                            </div>
+                            <div class="row">
+                                <label class="default-input-label" for="form-signup-tel">Телефон</label>
+                                <input class="default-input" id="form-signup-tel" name="form-signup-tel" type="tel" data-validation="[NOTEMPTY]" data-validation-message=" " placeholder="" autocomplete="off">
+                            </div>
+                            <div class="row">
+                                <div class="signup-link">У меня уже <a href="#" data-vd="signin-back">есть аккаунт</a></div>
+                            </div>
+
+                            <div class="row">
+                                <input class="button-sky submit" type="submit" value="Отправить заявку">
+                            </div>
+                            <div class="row compact">
+                                <div class="success-if-error">Если мы не связались с Вами в течении 24 ч, то Вы можете связаться с тех.поддержкой по телефону:</div>
+                                <div class="success-tel"><a href="tel:88123097999">8 (812) 309-79-99</a></div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- end Screen #2: Signup -->
                 </div>
             </div>
         </div>
     </div>
-
     //= modules/m_footer.html
     <!-- Javascript -->
     <script src="../scripts/plugins.js"></script>

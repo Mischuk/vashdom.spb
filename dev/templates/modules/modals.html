@@ -1,0 +1,127 @@
+<!-- Modals: callback -->
+<div id="callback-modal" class="modal zoom-anim-dialog mfp-hide">
+    <div class="techcallback-form default-form" data-vd="techcallback-form">
+        <form data-vd="form-validate" name="form-techcallback" method="POST">
+            <div class="form-title">
+                <span>Отправить вопрос в техподдержку</span>
+            </div>
+            <div class="row">
+                <label class="default-input-label" for="form-techcallback-username">Имя</label>
+                <input class="default-input" id="form-techcallback-username" name="form-techcallback-username" autocomplete="off" type="text" data-validation="[NOTEMPTY]" data-validation-message=" ">
+            </div>
+            <div class="row">
+                <label class="default-input-label" for="form-techcallback-surname">Фамилия</label>
+                <input class="default-input" id="form-techcallback-surname" name="form-techcallback-surname" autocomplete="off" type="text" data-validation="[NOTEMPTY]" data-validation-message=" ">
+            </div>
+            <div class="row">
+                <label class="default-input-label" for="form-techcallback-email">Email</label>
+                <input class="default-input" id="form-techcallback-email" name="form-techcallback-email" type="email" data-validation="[EMAIL]" data-validation-message=" " placeholder="" autocomplete="off">
+            </div>
+            <div class="row">
+                <label class="default-input-label" for="form-techcallback-tel">Телефон</label>
+                <input class="default-input" id="form-techcallback-tel" name="form-techcallback-tel" type="tel" data-validation="[NOTEMPTY]" data-validation-message=" " placeholder="" autocomplete="off">
+            </div>
+
+            <div class="row">
+                <textarea class="default-input textarea" id="form-techcallback-textarea" name="form-techcallback-textarea" placeholder="Введите ваш вопрос" data-validation="[NOTEMPTY]" data-validation-message=" "></textarea>
+            </div>
+
+            <div class="row">
+                <input class="button-sky submit" type="submit" value="Отправить вопрос">
+            </div>
+        </form>
+        <div class="success-message" style="display: none">Заявка отправлена!</div>
+    </div>
+</div>
+<!-- end Modals: callback -->
+
+<!-- Modals: reserve -->
+<div id="reserve-modal" class="modal zoom-anim-dialog mfp-hide">
+    <div class="reveserve-form default-form" data-vd="reserve-form">
+        <form data-vd="form-validate" name="form-reserve" method="POST">
+            <div class="form-title">
+                <span>Заявка на бронирование</span>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <div class="row">
+                        <label class="default-input-label" for="form-reserve-username">Имя</label>
+                        <input class="default-input" id="form-reserve-username" name="form-reserve-username" autocomplete="off" type="text" data-validation="[NOTEMPTY]" data-validation-message=" ">
+                    </div>
+                    <div class="row">
+                        <label class="default-input-label" for="form-reserve-surname">Фамилия</label>
+                        <input class="default-input" id="form-reserve-surname" name="form-reserve-surname" autocomplete="off" type="text" data-validation="[NOTEMPTY]" data-validation-message=" ">
+                    </div>
+                    <div class="row">
+                        <label class="default-input-label" for="form-reserve-midname">Отчество</label>
+                        <input class="default-input" id="form-reserve-midname" name="form-reserve-surname" autocomplete="off" type="text" data-validation="[NOTEMPTY]" data-validation-message=" ">
+                    </div>
+                    <div class="row">
+                        <label class="default-input-label" for="form-reserve-email">Email</label>
+                        <input class="default-input" id="form-reserve-email" name="form-reserve-email" type="email" data-validation="[EMAIL]" data-validation-message=" " placeholder="" autocomplete="off">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="row">
+                        <label class="default-input-label" for="form-reserve-tel">Телефон</label>
+                        <input class="default-input" id="form-reserve-tel" name="form-reserve-tel" type="tel" data-validation="[NOTEMPTY]" data-validation-message=" " placeholder="" autocomplete="off">
+                    </div>
+                    <div class="row">
+                        <label class="default-input-label half" for="form-reserve-pay">Способ<br>оплаты</label>
+                        <select class="search-box" id="form-reserve-pay" name="form-reserve-pay" data-vd="single-select" placeholder="Способ оплаты">
+                            <option value="Ипотека">Ипотека</option>
+                            <option value="Субсидия">Субсидия</option>
+                            <option value="Рассрочка">Рассрочка</option>
+                            <option value="Военная ипотека">Военная ипотека</option>
+                            <option value="Мат. капитал">Мат. капитал</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label class="default-input-label half">Дата<br>сделки</label>
+                        <div class="filter-button">
+                            <a href="#" class="datepicker-init">Срок сдачи</a>
+                        </div>
+                        <div class="m_datepicker">
+                            <div class="header">
+                                <a href="#" class="prev"></a>
+                                <div class="current-year">2016</div>
+                                <a href="#" class="next"></a>
+                            </div>
+                            <div class="body">
+                                <div class="quarter">
+                                    <span>1<br> квартал</span>
+                                </div>
+                                <div class="quarter">
+                                    <span>2<br> квартал</span>
+                                </div>
+                                <div class="quarter">
+                                    <span>3<br> квартал</span>
+                                </div>
+                                <div class="quarter">
+                                    <span>4<br> квартал</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="default-input-label half" for="form-reserve-upload">Скан<br>паспорта</label>
+                        <div class="upload">
+                            <div class="uploaded"><span id="form-reserve-upload-item"></span><span id="form-reserve-upload-clear">×</span></div>
+                            <span class="input-file-title">Добавить файл</span>
+                            <input type="file" id="form-reserve-upload" class="upload" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="row">
+                <input class="button-sky submit" type="submit" value="Отправить заявку">
+            </div>
+        </form>
+        <div class="success-message" style="display: none">Заявка отправлена!</div>
+    </div>
+</div>
+<!-- end Modals: reserve -->

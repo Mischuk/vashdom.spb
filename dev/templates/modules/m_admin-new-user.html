@@ -1,0 +1,53 @@
+<!-- Modals: Add new user -->
+<div id="admin-new-user" class="m_admin-new-user modal zoom-anim-dialog mfp-hide">
+    <div class="new-user-form default-form" data-vd="new-user-form">
+        <form data-vd="form-validate" name="form-new-user" method="POST">
+            <div class="form-title">
+                <span data-vd="admin-new-user-title">Добавить нового пользователя</span>
+            </div>
+            <div class="columns">
+                <div class="inputs">
+                    <div class="row">
+                        <label class="default-input-label" for="form-new-user-username">Пользователь</label>
+                        <input class="default-input" id="form-new-user-username" name="form-new-user-username" autocomplete="off" type="text" data-vd="form-new-user-username" data-validation="[NOTEMPTY]" data-validation-message=" ">
+                    </div>
+                    <div class="row">
+                        <label class="default-input-label" for="form-new-userpassword">Пароль</label>
+                        <input class="default-input" id="form-new-user-password" name="form-new-user-password" type="password" placeholder="" data-vd="generated-password-admin" data-validation="[NOTEMPTY]" data-validation-message=" ">
+                    </div>
+                    <div class="row">
+                        <label class="default-input-label" for="form-new-user-email">Email</label>
+                        <input class="default-input" id="form-new-user-email" name="form-new-user-email" type="email" data-validation="[EMAIL]" data-validation-message=" " placeholder="" autocomplete="off">
+                    </div>
+                    <div class="row">
+                        <label class="default-input-label" for="form-new-user-tel">Телефон</label>
+                        <input class="default-input" id="form-new-user-tel" name="form-new-user-tel" type="tel" data-validation="[NOTEMPTY]" data-validation-message=" " placeholder="" autocomplete="off">
+                    </div>
+                    <div class="row">
+                        <label class="default-input-label" for="form-new-user-group">Группа</label>
+                        <input class="default-input" id="form-new-user-group" name="form-new-user-group" autocomplete="off" type="text" data-validation="[NOTEMPTY]" data-validation-message=" ">
+                    </div>
+                    <div class="row">
+                        <label class="default-input-label" for="form-new-user-post">Должность</label>
+                        <input class="default-input" id="form-new-user-post" name="form-new-user-post" autocomplete="off" type="text" data-validation="[NOTEMPTY]" data-validation-message=" ">
+                    </div>
+                </div>
+                <div class="image">
+                    <div class="vertical-outer">
+                        <div class="vertical-inner">
+                            <a href="#">Загрузить или удалить фотографию</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-footer">
+                <div class="row">
+                    <input class="button-sky submit" type="submit" value="Сохранить">
+                    <input class="button-gray cancel" type="reset" value="Отменить">
+                </div>
+            </div>
+        </form>
+        <div class="success-message" style="display: none">Заявка отправлена!</div>
+    </div>
+</div>
+<!-- end Modals: Add new user -->

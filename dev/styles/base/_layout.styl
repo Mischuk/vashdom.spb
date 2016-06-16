@@ -2,7 +2,7 @@
       Base grid styles
 ==========================*/
 $footer = 150px
-$wrapper = 970px
+$wrapper = 990px
 
 html, body
   height 100%
@@ -16,21 +16,19 @@ body
 .container
   position relative
   min-height 100%
-  margin-bottom -($footer)
-  padding-bottom $footer
 .main
   padding-bottom $footer
 .m_footer
   width 100%
   height $footer
 
-.wrapper
+.wrapper,
+.m_admin,
+.m_filters
   clearfix()
   position relative
   width $wrapper
   height 100%
-  padding-left 15px
-  padding-right 15px
   margin-left auto
   margin-right auto
   @media screen and (max-width: 970px)
